@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>SVG Star - Demo1</title>
+</head>
+
+<body>
+<div id="starContainer"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	var starTemplate = '<svg id="starDust" height="210" width="500">\
+  <polygon points="100,10 40,198 190,78 10,78 160,198"\ style="fill:#4285f4;stroke:#d9e8ff;stroke-width:2;fill-rule:nonzero;"/>\
+  Sorry, your browser does not support inline SVG.\
+</svg>'; 
+
+$("#starContainer").hide();
+$("#starContainer").html(starTemplate);
+$("#starContainer").fadeIn(800);
+});
+
+$(document).delegate("#starDust", "click", function(){
+	alert("Hello! Star-Hunter.");
+});
+</script>
+
+</body>
+</html>

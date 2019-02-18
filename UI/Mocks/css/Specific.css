@@ -1,0 +1,110 @@
+.mainContentPanel {
+    float: left;
+    width: 100%;
+}
+.mainContentPanelInner {
+    padding: 0 15px;
+}
+
+
+/* Aside Nav */
+.asideNavigationPanel {
+    background-color: #24262d;
+    width: 18%;
+    float: left;
+    min-height: 785px;
+    position: absolute;
+}
+
+.asideNavigationPanel {
+    display: none;
+    z-index: 2;
+}
+.asideNavigationPanel .list-group-item {
+    background: none;
+    border: none;
+}
+
+.asideNavigationPanel .list-group-item a {
+    color: #949ba2;
+}
+
+.asideNavigationPanel .list-group-item a:hover {
+    color: #4caf50;
+}
+
+.asideNavigationPanel .list-group-item.active a {
+    color: #fff;
+}
+
+.asideNavigationPanel .list-group-item.active {
+    background: none;
+}
+
+.brandWrapper {
+    background-color: #4caf50;
+    width: 100%;
+    min-height: 60px;
+    text-align: center;
+}
+.brandWrapper span{
+    color: #fff;
+    font-weight: bold;
+    font-size: 21px;
+    display: inline-block;
+    padding-top: 14px;
+}
+.hamburgerMenuIcon {
+    cursor: pointer;
+    margin-top: 15px;
+}
+.hamburgerBar {
+    display: block;
+    background-color: #4caf50;
+    width: 22px;
+    height: 2px;
+    margin-bottom: 3px;
+}
+.mainNavOuter {
+    background-color: #fff;
+}
+
+.mainNavList {
+    margin-top: 48px;
+}
+
+.mainNavOuter .brandWrapper{
+   width: 260px;
+   float: left;
+}
+
+.mainNavOuter nav{
+    float: left;
+    padding: 0;
+    width: 80%;
+}
+
+.navGroupLeft{
+    float: left;
+}
+.navGroupRight{
+    float: right;
+}
+.navGroupLeft,
+.navGroupRight{
+    width: 50%;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+.userAccDropdownIcon {
+    float: right;
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid #dedee0;
+    line-height: 1em;
+    border-radius: 50%;
+    background-image: url("../img/user_img.png");
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+}
