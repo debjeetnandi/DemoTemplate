@@ -1,0 +1,586 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Generic.css">
+    <link rel="stylesheet" href="css/Specific.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Main Wrapper -->
+    <div class="mainWrapper">
+        <!-- Main Content Panel -->
+        <div class="mainContentPanel clearfix">
+            
+            <!-- Navigation Panel (To be stayed hidden by default) -->
+            <aside class="asideNavigationPanel clearfix">
+                <div class="brandWrapper brandWrapper">
+                    <span>Green Star Project</span>
+                </div>
+                <ul class="list-group mainNavList">
+                    <li class="list-group-item active"><a href="#">Schools</a></li>
+                    <li class="list-group-item"><a href="#">Students</a></li>
+                    <li class="list-group-item"><a href="#">Analysis</a></li>
+                    <li class="list-group-item"><a href="#">About Green Star</a></li>
+                </ul>
+            </aside>
+            <!-- /. Navigation Panel (To be stayed hidden by default)-->
+
+            <!-- Header -->
+            <div class="col-xs-12">
+                <div class="row mainNavOuter darkBg">
+                    <div class="brandWrapper darkBg">
+                        <span>Green Star Project</span>
+                    </div>
+                    <nav>
+                        <ul class="navGroupLeft">
+                            <li class="hamburgerMenuIcon">
+                                <span class="hamburgerBar">&nbsp;</span>
+                                <span class="hamburgerBar"></span>
+                                <span class="hamburgerBar"></span>
+                            </li>
+                        </ul>
+
+                        <ul class="navGroupRight">
+                            <li class="hamburgerMenuIcon">
+                                <span class="userAccDropdownIcon"></span>
+                                <span class="userWelcomeMsg">Welcome Sreyan!</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /. Header -->
+
+            <!-- Main Content Panel Inner -->
+            <div class="mainContentPanelInner">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Dashboard Wrapper -->
+                            <div class="dashboardWrapper">
+                                <!-- Mast Head -->
+                                <div class="mastHeaderOuter noBorder">
+                                    <div class="mastHeader">
+                                        <h3>
+                                            <span class="accentColorInline">Welcome</span> to Green Star Dashboard
+                                        </h3>
+                                        <small>Analyze student data in multiple ways and generate green star.</small>
+                                    </div>
+                                </div>
+                                <!-- /. Mast Head -->
+
+                                <!-- Counters -->
+                                <div class="counterWrapper">
+                                    <div class="row">
+                                        <div class="col-sm-3 counterPanel">
+                                            <div class="panel panel-default accentPanel clearfix">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title">
+                                                        <span class="glyphicon glyphicon-home counterCategoryIcon"></span>
+                                                        <span class="counterTitle">Schools</span>
+                                                    </h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                  <p class="counterCount accentColor">21</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-3 counterPanel">
+                                            <div class="panel panel-default deepOrangePanel clearfix">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title">
+                                                        <span class="glyphicon glyphicon-map-marker counterCategoryIcon"></span>
+                                                        <span class="counterTitle">Cities</span>
+                                                    </h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <p class="counterCount deepOrangeColor">10</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-3 counterPanel"> 
+                                            <div class="panel panel-default deepYellowPanel clearfix">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title">
+                                                        <span class="glyphicon glyphicon-wrench counterCategoryIcon"></span>
+                                                        <span class="counterTitle">Metrices</span>
+                                                    </h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <p class="counterCount deepYellowColor">8</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-3 counterPanel">
+                                            <div class="panel panel-default deepCyanPanel clearfix">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title">
+                                                        <span class="glyphicon glyphicon-user counterCategoryIcon"></span>
+                                                        <span class="counterTitle">Students</span>
+                                                    </h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <p class="counterCount deepCyanColor">300+</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    
+                                </div>
+                                <!-- /. Counters -->
+
+                                <!-- Dashboard Items  -->
+                                <div class="dashboardItemsWrapper">
+                                    <div class="row">
+                                        <!-- Dashboard Item -->
+                                        <div class="col-md-6">
+                                            <div class="dashboardItem">
+                                                <div class="dashboardItemHeader clearfix">
+                                                    <div class="dashboardItemHeaderLeft">
+                                                        <h4><span class="accentColor">Green Star </span>Calculation</h4>
+                                                        <small class="showingResFor">
+                                                            Showing Green Star for <span class="accentColor">Shyam Sundar Khan</span><sub class="rollNo">567554</sub>
+                                                            <span class="schoolAndCity">Modern High School | Kolkata</span>
+                                                        </small><br />
+                                                        <!--<small class="showingResFor">
+                                                            Showing Green Star for <span class="accentColor">Modern High School</span> | <span>Kolkata</span>
+                                                        </small><br />
+                                                        <small class="showingResFor">
+                                                            Showing Green Star for <span class="accentColor">Modern High School</span> | <span>Class V</span> | <span>Section A</span>
+                                                        </small><br />
+                                                        <small class="showingResFor">
+                                                            Showing Green Star for <span class="accentColor">Modern High School</span> | <span>Class V</span> | <span>Section A</span> | <span>Group A</span>
+                                                        </small>-->
+                                                    </div>
+                                                    <div class="dashboardItemHeaderRight">
+                                                        <div class="dashboardItemTopLevelActions">
+                                                            <span class="glyphicon glyphicon-print dashboardSettingsIcon dashboardItemExpandIcon"></span>
+                                                            <span class="glyphicon glyphicon-filter dashboardSettingsIcon dashboardItemFilterIcon greenStarCalculationFilterIcon"></span>
+                                                            <!--<span class="glyphicon glyphicon-resize-full dashboardSettingsIcon dashboardItemExpandIcon"></span>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Dashboard Item Content -->
+                                                <div class="dashboardItemContent">
+                                                    <div class="dashboardStarWrapper chartStarWrapper text-center">
+                                                        <svg id="starDust" height="222px" width="280">
+                                                            <!--<polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:#4285f4;stroke:#d9e8ff;stroke-width:2;fill-rule:nonzero;" />-->
+                                                            Sorry, your browser does not support inline SVG.
+
+
+                                                            <!-- 2 -->
+                                                            <polygon title="Day 1" points="110, 80, 140, 80, 140, 120" style="fill:#4caf50;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 3 -->
+                                                            <polygon points="170, 80, 140, 80, 140, 120" style="fill:#4caf50;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 4 -->
+                                                            <polygon points="170, 80, 180, 110, 140, 120" style="fill:#ffd600;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 5 -->
+                                                            <polygon points="190, 140, 180, 110, 140, 120" style="fill:#4caf50;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 6 -->
+                                                            <polygon points="168, 150, 190, 140, 140, 120" style="fill:#03a9f4;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 7 -->
+                                                            <polygon points="140, 170, 168, 150, 140, 120" style="fill:#4caf50;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 8 -->
+                                                            <polygon points="108, 150, 140, 170, 140, 120" style="fill:#ffd600;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 9 -->
+                                                            <polygon points="90, 140, 108, 150, 140, 120" style="fill:#03a9f4;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 10 -->
+                                                            <polygon points="90, 140, 100, 110, 140, 120" style="fill:#ffd600;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 11 -->
+                                                            <polygon points="100, 110, 110, 80, 140, 120" style="fill:#b71c1c;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 12 -->
+                                                            <polygon points="110, 80, 140, 80, 140, 40" style="fill:#ffd600;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 13 -->
+                                                            <polygon points="170, 80, 140, 80, 140, 40" style="fill:#b71c1c;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 14 -->
+                                                            <polygon points="170, 80, 220, 100, 180, 110" style="fill:#03a9f4;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 15 -->
+                                                            <polygon points="190, 140, 220, 100, 180, 110" style="fill:#b71c1c;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 16 -->
+                                                            <polygon points="190, 140, 190, 180, 168, 150" style="fill:#b71c1c;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 17 -->
+                                                            <polygon points="140,  170, 190, 180, 168, 150" style="fill:#03a9f4;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 18 -->
+                                                            <polygon points="140, 170, 90, 180, 108, 150" style="fill:#03a9f4;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 19 -->
+                                                            <polygon points="90, 140, 90, 180, 108, 150" style="fill:#4caf50;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 20 -->
+                                                            <polygon points="90, 140, 60, 100, 100, 110" style="fill:#4caf50;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 21 -->
+                                                            <polygon points="100, 110, 60, 100, 110, 80" style="fill:#ffd600;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 22 -->
+                                                            <polygon points="110, 80, 140, 40, 140, 0" style="fill:#03a9f4;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 23 -->
+                                                            <polygon points="170, 80, 140, 40, 140, 0" style="fill:#b71c1c;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 24 -->
+                                                            <polygon points="170, 80, 220, 100, 280, 80" style="fill:#ffd600;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 25 -->
+                                                            <polygon points="190, 140, 220, 100, 280, 80" style="fill:#4caf50;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 26 -->
+                                                            <polygon points="190, 140, 190, 180, 210, 220" style="fill:#b71c1c;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 27 -->
+                                                            <polygon points="140, 170, 190, 180, 210, 220" style="fill:#ffd600;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 28 -->
+                                                            <polygon points="140, 170, 60, 220, 90, 180" style="fill:#4caf50;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 29 -->
+                                                            <polygon points="90, 140, 60, 220, 90, 180" style="fill:#4caf50;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 30 -->
+                                                            <polygon points="0, 80, 90, 140, 60, 100" style="fill:#ffd600;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 31 -->
+                                                            <polygon points="0, 80, 110, 80, 60, 100" style="fill:#4caf50;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                            <!-- 1 -->
+                                                            <!--<polygon points="65, 58, 75, 58, 70, 62" style="fill:#949ba2;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />-->
+                                                            <polygon points="130, 130, 140, 110, 150, 130, 130, 116, 150, 116" style="fill:#4caf50;stroke:#3a3a3a;stroke-width:1;fill-rule:nonzero;" />
+
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <!-- Dashboard Item Content -->
+
+                                                <!-- Dashboard Item Footer -->
+                                                <div class="dashboardItemFooter clearfix">
+                                                    <p class="text-center">Attendance</p>
+                                                    <ul class="starLegend">
+                                                        <li>
+                                                            <span class="legendColorCode bgColorGreen"></span>
+                                                            <span class="legendValue">75% - 80%</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="legendColorCode bgColorYellow"></span>
+                                                            <span class="legendValue">40% - 74%</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="legendColorCode bgColorRed"></span>
+                                                            <span class="legendValue">0% - 39%</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="legendColorCode bgColorBlue"></span>
+                                                            <span class="legendValue">Declared Holidays</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /. Dashboard Item Footer -->
+
+                                                <!-- Dshboard Filter Overlay -->
+                                                <div class="dashboardItemFilterOverlay starCalculationFilterStep1 toBeAppearedBox flip-horizontal-bottoms" style="display: none;">
+                                                    <ul class="filterOverlayControlPanelList">
+                                                        <li><span class="glyphicon glyphicon-remove closeFilterPanel starCalculationStep1Dismiss"></span></li>
+                                                    </ul>
+
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Assessment mode 
+                                                                <sub><small>Assessment can be done on individual or in certain groups</small></sub>
+                                                            </label>
+                                                            <select class="form-control">
+                                                                <option>Individual</option>
+                                                                <option>Group / Team</option>
+                                                                <option>Class</option>
+                                                                <option>School</option>
+                                                            </select>
+                                                        </div><!-- /. Assessment Mode -->
+
+                                                        <div class="form-group">
+                                                            <label>
+                                                                City
+                                                                <sub><small>Set school, based on city selection</small></sub>
+                                                            </label>
+                                                            <select class="form-control">
+                                                                <option>Kolkata</option>
+                                                                <option>Pune</option>
+                                                                <option>Chennai</option>
+                                                                <option>Ahmedabad</option>
+                                                            </select>
+                                                        </div><!-- /. City -->
+
+                                                        <div class="form-group">
+                                                            <label>
+                                                                School
+                                                                <sub><small>Set performance criteria, based on school selection</small></sub>
+                                                            </label>
+                                                            <select class="form-control">
+                                                                <option>Modern High School</option>
+                                                                <option>Cliamtic Wellbeing Management School</option>
+                                                                <option>Dr. SharahaKapoor Memorial Foundation</option>
+                                                                <option>B.D. Memorial International</option>
+                                                            </select>
+                                                        </div><!-- /. School -->
+
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Class
+                                                            </label>
+                                                            <select class="form-control">
+                                                                <option>Class I</option>
+                                                                <option>Class II</option>
+                                                                <option>Class III</option>
+                                                                <option>Class IV</option>
+                                                            </select>
+                                                        </div><!-- /. Class -->
+
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Section
+                                                            </label>
+                                                            <select class="form-control">
+                                                                <option>A</option>
+                                                                <option>B</option>
+                                                                <option>C</option>
+                                                                <option>D</option>
+                                                            </select>
+                                                        </div><!-- /. Section -->
+
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Performance Criteria
+                                                                <sub><small>Set performance criteria, example: Attendance, Discipline etc.</small></sub>
+                                                            </label>
+                                                            <select class="form-control">
+                                                                <option>Academics</option>
+                                                                <option>Discipline</option>
+                                                                <option>Crossfit Training</option>
+                                                                <option>Art and Crafts</option>
+                                                            </select>
+                                                        </div><!-- /. Criteria -->
+
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Month Selection
+                                                                <sub><small>Set the month period for Green Star Assessment.</small></sub>
+                                                            </label>
+                                                            <input type="text" class="form-control" />
+                                                        </div><!-- /. Date / Month Selection  -->
+
+                                                        <div class="form-group text-right">
+                                                            <button type="button" class="btn btn-success greenStarCalculationStep1NextBtn" data-target="innerOverlay1">Next</button>
+                                                        </div>
+                                                    </form>
+
+                                                    <!-- Inner overlay -->
+                                                    <div class="innerOverlay text-center innerOverlay1">
+                                                        <img src="img/loader1.gif" style="width: 40px;" class="loader" />
+                                                    </div>
+                                                    <!-- /. Inner overlay -->
+                                                </div>
+                                                <!-- /. Dashboard Filter Overlay -->
+
+                                                <!-- Dashboard Filter Overlay -->
+                                                <div class="dashboardItemFilterOverlay starCalculationFilterStep2 toBeAppearedBox flip-horizontal-bottoms" style="display: none;">
+                                                    <div class="studentSearchOuter studentSearchAndFilter clearfix">
+                                                        <div class="searchBox">
+                                                            <input type="text" class="studentNameSearch" placeholder="Search student name..." />
+                                                        </div>
+                                                    </div>
+
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="10%">&nbsp;</th>
+                                                                <th width="70%">Student Name</th>
+                                                                <th width="20%">Roll#</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><input type="radio" name="studentNameRadio" /></td>
+                                                                <td>Shyam Sundar Khan</td>
+                                                                <td>546771</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="radio" name="studentNameRadio" /></td>
+                                                                <td>Sreyan Chowdhury</td>
+                                                                <td>224151</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="radio" name="studentNameRadio" /></td>
+                                                                <td>Debjeet Nandi</td>
+                                                                <td>547118</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="radio" name="studentNameRadio" /></td>
+                                                                <td>Jen Cooper</td>
+                                                                <td>228111</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="radio" name="studentNameRadio" /></td>
+                                                                <td>Shyam Sundar Khan</td>
+                                                                <td>546771</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="radio" name="studentNameRadio" /></td>
+                                                                <td>Sreyan Chowdhury</td>
+                                                                <td>224151</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <div class="text-center">
+                                                        <ul class="pagination">
+                                                            <li disabled><a href="#">Previous</a></li>
+                                                            <li><a href="#">1</a></li>
+                                                            <li class="active"><a href="#">2</a></li>
+                                                            <li><a href="#">3</a></li>
+                                                            <li><a href="#">4</a></li>
+                                                            <li><a href="#">5</a></li>
+                                                            <li disabled><a href="#">Next</a></li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="form-group text-right clearfix">
+                                                        <button type="button" class="btn btn-warning starCalculationStep2Dismiss">Cancel</button>
+                                                        <button type="button" class="btn btn-success starCalculationStep2DismissGo" data-target="innerOverlay2">Go</button>
+                                                    </div>
+
+                                                    <!-- Inner overlay -->
+                                                    <div class="innerOverlay text-center innerOverlay2">
+                                                        <img src="img/loader1.gif" style="width: 40px;" class="loader" />
+                                                    </div>
+                                                    <!-- /. Inner overlay -->
+                                                </div>
+                                                <!-- /. Dashboard Filter Overlay -->
+                                            </div>
+                                        </div>
+                                        <!-- /. Dashboard Item -->
+
+
+                                        <!-- Dashboard Item - Graph -->
+                                        <div class="col-md-6">
+                                            <div class="dashboardItem">
+                                                <div class="dashboardItemHeader clearfix">
+                                                    <div class="dashboardItemHeaderLeft">
+                                                        <h4><span class="accentColor">Encouraging</span> Metrics</h4>
+                                                        <small class="showingResFor">
+                                                            Showing Comparative Chart of <span class="accentColor">Attendance</span> of all the sections of <span class="accentColor">Class V | Modern High School</span> 
+                                                        </small>
+                                                    </div>
+                                                    <div class="dashboardItemHeaderRight">
+                                                        <div class="dashboardItemTopLevelActions">
+                                                            <span class="glyphicon glyphicon-print dashboardSettingsIcon dashboardItemExpandIcon"></span>
+                                                            <span class="glyphicon glyphicon-filter dashboardSettingsIcon dashboardItemFilterIcon"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Dashboard Item Content -->
+                                                <div class="dashboardItemContent">
+                                                    <div class="dashboardStarWrapper chartStarWrapper text-center">
+                                                        <div id="encouragingMetricsChart" style="width: 100%; height: 396px;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Dashboard Item Content -->
+                                               
+                                            </div>
+                                        </div>
+                                        <!-- /. Dashboard Item -->
+                                    </div>
+                                </div>
+                                <!-- /. Dashboard Items -->
+
+                            </div>
+                            <!-- /. Dashboard Wrapper -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /. Main Content Panel Inner -->
+
+            <!-- Footer -->
+            <footer>
+                <p class="text-center">&copy; 2019 <a href="https://www.cognizant.com/">Cognizant</a>, all rights reserved</p>
+            </footer>
+            <!-- /. Footer -->
+        </div>
+        <!-- /. Main Content Panel -->
+    </div>
+    <!-- /. Main Wrapper -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/theme.js"></script>
+    
+    
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Section', 'Percentage'],
+                ['Sect A', 30],
+                ['Sect B', 60],
+                ['Sect C ', 70],
+                ['Sect D', 15],
+                ['Sect E', 33]
+            ]);
+
+            var options = {
+                title: 'Attendance comparative chart from Jan - Feb 2019',
+                pieHole: 0.4,
+                pieSliceText: 'label',
+                tooltip: { trigger: 'none' },
+                legend: { position: 'right', alignment: 'start', textStyle: { color: '#949ba2', fontSize: 10}},
+                is3D: true,
+                backgroundColor: '#33363f',
+                titleTextStyle: { color: '#949ba2' }
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('encouragingMetricsChart'));
+            chart.draw(data, options);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,540 @@
+.mainContentPanel {
+    float: left;
+    width: 100%;
+}
+.mainContentPanelInner {
+    padding: 0 15px;
+}
+
+
+/* Aside Nav */
+.asideNavigationPanel {
+    background-color: #24262d;
+    width: 18%;
+    float: left;
+    min-height: 785px;
+    position: absolute;
+}
+
+.asideNavigationPanel {
+    display: none;
+    z-index: 2;
+}
+.asideNavigationPanel .list-group-item {
+    background: none;
+    border: none;
+}
+
+.asideNavigationPanel .list-group-item a {
+    color: #949ba2;
+}
+
+.asideNavigationPanel .list-group-item a:hover {
+    color: #4caf50;
+}
+
+.asideNavigationPanel .list-group-item.active a {
+    color: #fff;
+}
+
+.asideNavigationPanel .list-group-item.active {
+    background: none;
+}
+
+.brandWrapper {
+    background-color: #4caf50;
+    width: 100%;
+    min-height: 60px;
+    text-align: center;
+}
+.brandWrapper span{
+    color: #fff;
+    font-weight: bold;
+    font-size: 21px;
+    display: inline-block;
+    padding-top: 14px;
+}
+.hamburgerMenuIcon {
+    cursor: pointer;
+    margin-top: 15px;
+}
+.hamburgerBar {
+    display: block;
+    background-color: #4caf50;
+    width: 22px;
+    height: 2px;
+    margin-bottom: 3px;
+}
+.mainNavOuter {
+    background-color: #fff;
+}
+
+.mainNavList {
+    margin-top: 48px;
+}
+
+.mainNavOuter .brandWrapper{
+   width: 260px;
+   float: left;
+}
+
+.mainNavOuter nav{
+    float: left;
+    padding: 0;
+    width: 80%;
+}
+
+.navGroupLeft{
+    float: left;
+}
+.navGroupRight{
+    float: right;
+}
+.navGroupLeft,
+.navGroupRight{
+    width: 50%;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+.userAccDropdownIcon {
+    float: right;
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid #dedee0;
+    line-height: 1em;
+    border-radius: 50%;
+    background-image: url("../img/user_img.png");
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+}
+.userWelcomeMsg{
+    float: right;
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+
+
+
+/* User Login */
+.midWidthFormArea {
+    max-width: 500px;
+    margin: 90px auto 0;
+}
+
+/* City Select and Next */
+form.citySelectForm .form-group{
+    margin-bottom: 0;
+}
+.customAutoSuggestDropdownBox {
+    background-color: #2d3038;
+}
+.citySelectNextWrapper{
+    margin-top: 15px;
+}
+.listItemBoxIcon li {
+    margin: 8px 0;
+}
+.listItemBoxIcon .glyphicon{
+    display: inline-block;
+    padding-right: 5px;
+}
+
+
+/* School enlistment and configuration */
+.goToSchoolBtn{
+    display: inline-block;
+    padding: 2px 4px;
+    line-height: 1em;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 1px;
+}
+.goToSchoolBtn:hover{
+    border-color: #4caf50;
+    background-color: #4caf50;
+}
+.schoolSettings {
+    vertical-align: middle;
+    color: #fff;
+    cursor: pointer;
+}
+.schoolSettings:hover,
+.schoolSettings.active{
+    color: #4caf50;
+}
+.generalItemDropdown{
+    position: absolute;
+    z-index: 3;
+    background-color: #24262d;
+    min-width: 140px;
+    margin-left: -60px;
+    margin-top: 8px;
+    border-radius: 3px;
+    display: none;
+    padding: 5px 0;
+}
+.generalItemDropdown.active{
+    display: block;
+}
+.generalItemDropdown li {
+    font-size: 12px;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+.generalItemDropdown li:hover {
+    background-color: #508852;
+    color: #fff;
+}
+.generalItemDropdown:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-bottom: 8px solid #24262d;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    top: -8px;
+    left: 50%;
+    margin-left: -11px;
+}
+
+
+/* Add New SChool */
+.noMargTopContentOuter .midWidthFormArea {
+    margin-top: 0;
+}
+    
+
+/* School Content */
+.filterParamSelectionList ul{
+    margin-left: 10px;
+}
+.filterParamSelectionList li{
+    font-size: 13px;
+}
+
+.filterParamSelectionList input[type="checkbox"]{
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+}
+.filterParameters {
+    max-height: 248px;
+    overflow: auto;
+    background-color: #3e414a;
+    padding: 5px 2px 5px 15px;
+    margin-right: 10px;
+    display: none;
+}
+.StudentListWrapper .filterParameters,
+.StudentListWrapper .schoolContentTbl {
+    float: left;
+    width: 100%;
+}
+.StudentListWrapper.splitActive .filterParameters {
+    width: 16%;
+    display: block;
+}
+.StudentListWrapper.splitActive .schoolContentTbl{
+    width: 82%;
+}
+.StudentListWrapper .accentColor{
+    color: #fff;
+}
+.studentSearchAndFilter{
+    margin-bottom: 13px;
+}
+.studentSearchAndFilter .filterBox,
+.studentSearchAndFilter .studentNameSearch{
+    float: left;
+}
+.studentSearchAndFilter .filterBox{
+    margin-right: 10px;
+    width: 10%;
+    text-align: left;
+}
+.studentSearchAndFilter .studentNameSearch {
+    background: none;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    outline: none;
+    border-bottom: 2px solid #3d404c;
+    width: 50%;
+    float: right;
+    background-image: url("../img/search_icon.png");
+    background-repeat: no-repeat;
+    background-position: 99% center;
+    background-size: 17px;
+    transition: all 0.1s ease-out;
+    padding-right: 24px;
+    padding-bottom: 5px;
+}
+.studentSearchAndFilter .studentNameSearch:focus {
+    border-color: #4caf50;
+    color: #4caf50;
+    font-size: 18px;
+}
+.filterBox .glyphicon{
+    padding: 0 2px;
+}
+.filterBox .glyphicon:hover,
+.filterBox .glyphicon.active {
+    color: #4caf50;
+    cursor: pointer;
+}
+.StudentListWrapper .filterParameters,
+.StudentListWrapper .schoolContentTbl {
+    transition: all 0s ease 0s;
+}
+.genderVal{
+    display: inline-block;
+    padding: 0 5px;
+    margin-top: 2px;
+}
+.clearFilterParamsOuter{
+    padding-right: 13px;
+}
+.clearFilterParamsOuter a {
+    font-size: 11px;
+    display: inline-block;
+    border: 1px solid #949ba2;
+    border-radius: 3px;
+    padding: 1px 10px 3px;
+    line-height: 1em;
+    color: #949ba2;
+}
+.clearFilterParamsOuter a:hover{
+    border-color: #4caf50;
+    color: #4caf50;
+} 
+
+
+/* Bulk Upload Student's Data */
+.generateTemplateFilterFields{
+   max-height: 250px;
+   overflow: auto;
+   background: #3e414a;
+   padding: 10px;
+   float: left;
+   width: 45%;
+}
+.rightSideBlock{
+    margin-left: 30px;
+}
+.generateTemplateOuter{
+    margin-top: 18px;
+    float: left;
+    width: 100%;
+}
+.generateTemplateOuter .glyphicon{
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    padding-right: 4px;
+}
+
+
+/* Criteria Configuration */
+.inlineEditTextField{
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: none;
+    border-bottom: 1px solid #4caf50;
+    color: #4caf50;
+    float: left;
+    width: 80%
+}
+.editDecisionMarker {
+    border: 1px solid #4caf50;
+    color: #fff;
+    background: #4caf50;
+    border-right: 1px solid #358838;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    width: 10%;
+    text-align: center;
+    line-height: 1em;
+    font-size: 13px;
+    padding: 2px 0;
+}
+.editDecisionMarker:hover {
+    background: #358838;
+    border-color: #358838;
+}
+.editDecisionMarker .glyphicon{
+    color: #fff;
+    line-height: 1em;
+    font-size: 11px;
+}
+.addInlineField{
+    color: #949ba2;
+    padding-left: 2px;
+}
+.addInlineField:focus{
+    color: #4caf50;
+}
+.addCriteriaForm{
+    margin: 0 0 20px 0;
+    float: left;
+    width: 100%;
+}
+
+
+
+/* Dashboard */
+.counterPanel .panel{
+    padding: 13px 15px;
+}
+.counterPanel .panel-heading{
+    width: 30%;
+}
+.counterPanel .panel-body{
+    width: 70%;
+}
+.counterPanel .panel-heading,
+.counterPanel .panel-body{
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.counterCategoryIcon {
+    color: #7d8088;
+    font-size: 24px;
+    display: block;
+}
+.counterTitle {
+    color: #bfbfbf;
+    text-transform: uppercase;
+    font-size: 13px;
+    display: block;
+    margin: 9px 0 0;
+}
+.counterCount{
+    font-size: 28px;
+    text-align: right;
+    margin: 0;
+}
+.dashboardItem {
+    background-color: rgba(68, 70, 79, 0.5);
+    padding: 15px;
+    position: relative;
+}
+.showingResFor .accentColor{
+    font-size: 12px;
+}
+.showingResFor .rollNo{
+    display: inline-block;
+    padding-left: 4px;
+    font-size: 12px;
+}
+.showingResFor .schoolAndCity{
+    display: block;
+    font-size: 11px;
+}
+.dashboardItemHeaderLeft{
+    float: left;
+    width: 80%;
+}
+.dashboardItemHeaderRight{
+    width: 20%;
+    float: right;
+}
+.dashboardItemTopLevelActions{
+    text-align: right;
+}
+.dashboardSettingsIcon {
+    cursor: pointer;
+    font-size: 12px;
+    margin: 0 2px;
+}
+.dashboardSettingsIcon:hover {
+    color: #fff;
+}
+#starDust{
+    margin: 15px auto 0;
+}
+.chartStarWrapper {
+    background: #33363f;
+}
+.dashboardStarWrapper{
+    margin: 10px 0 0;
+}
+.starLegend li span{
+    font-size: 12px;
+}
+.dashboardItemFooter {
+    background-color: #33363f;
+}
+.starLegend{
+   float: right;
+   margin: 5px;
+}
+.legendColorCode{
+    width: 8px;
+    height: 8px;
+    margin: -2px 8px 2px 0;
+    background-color: yellow;
+    display: inline-block;
+}
+.bgColorGreen {
+    background-color: #8bc34a;
+}
+.bgColorRed {
+    background-color: #f44336;
+}
+.bgColorYellow {
+    background-color: #ffeb3b;
+}
+.bgColorBlue {
+    background-color: #03a9f4;
+}
+.dashboardItemFilterOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: #26282d;
+    padding: 15px;
+}
+.filterOverlayControlPanelList li{
+    display: inline-block;
+    float: right;
+}
+.filterOverlayControlPanelList li .glyphicon:hover{
+    color: #4caf50;
+    cursor: pointer;
+}
+.toBeAppearedBox {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+}
+.innerOverlay {
+    position: absolute;
+    background-color: rgba(29, 29, 31, 0.9);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 5;
+}
+.loader{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.innerOverlayTargetClass {
+    transition: all 0s ease 0s;
+}

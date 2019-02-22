@@ -1,0 +1,475 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Performance Data Capture</title>
+
+    <!-- Scrollbar -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Generic.css">
+    <link rel="stylesheet" href="css/Specific.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Main Wrapper -->
+    <div class="mainWrapper">
+        <!-- Main Content Panel -->
+        <div class="mainContentPanel clearfix">
+
+            <!-- Navigation Panel (To be stayed hidden by default) -->
+            <aside class="asideNavigationPanel clearfix">
+                <div class="brandWrapper">
+                    <span>Green Star Project</span>
+                </div>
+                <ul class="list-group mainNavList">
+                    <li class="list-group-item active"><a href="#">Schools</a></li>
+                    <li class="list-group-item"><a href="#">Students</a></li>
+                    <li class="list-group-item"><a href="#">Analysis</a></li>
+                    <li class="list-group-item"><a href="#">About Green Star</a></li>
+                </ul>
+            </aside>
+            <!-- /. Navigation Panel (To be stayed hidden by default)-->
+            <!-- Header -->
+            <div class="col-xs-12">
+                <div class="row mainNavOuter darkBg">
+                    <div class="brandWrapper darkBg">
+                        <span>Green Star Project</span>
+                    </div>
+                    <nav>
+                        <ul class="navGroupLeft">
+                            <li class="hamburgerMenuIcon">
+                                <span class="hamburgerBar">&nbsp;</span>
+                                <span class="hamburgerBar"></span>
+                                <span class="hamburgerBar"></span>
+                            </li>
+                        </ul>
+
+                        <ul class="navGroupRight">
+                            <li class="hamburgerMenuIcon">
+                                <span class="userAccDropdownIcon"></span>
+                                <span class="userWelcomeMsg">Welcome Sreyan!</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /. Header -->
+            <!-- Breadcrumb -->
+            <div class="breadCrumb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="breadCrumbList">
+                                <li><a href="#">Home</a>&nbsp;&nbsp;/&nbsp;</li>
+                                <li><a href="#">Kolkata Schools</a>&nbsp;&nbsp;/&nbsp;</li>
+                                <li>Performance Data Capture</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /. Breadcrumb -->
+            <!-- Main Content Panel Inner -->
+            <div class="mainContentPanelInner">
+                <div class="container">
+                    <div class="row">
+                        <!-- Performance Data Capture Selection Mode -->
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mastHeaderOuter clearfix">
+                                        <div class="mastHeader">
+                                            <h3>
+                                                <span class="accentColorInline">Performance Data</span> Capture Initialization
+                                            </h3>
+                                            <small>Proceed though the selection steps to start with the performance data capture process.</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="selectCriteria">Select Criteria</label>
+                                        <select class="form-control">
+                                            <option>Attendance</option>
+                                            <option>Discipline</option>
+                                            <option>Academics</option>
+                                            <option>Crossfit</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="selectCriteria">Data Capture Mode</label>
+                                        <div class="form-group clearfix">
+                                            <span class="radioWrapper">
+                                                <input type="radio" class="form-control" id="gender" name="dataCaptureMode" value="Bulk" />
+                                                <span class="genderVal">Bulk<br /><small class="extraSmallFonts">For a Month</small></span>
+                                            </span>
+                                            <span class="radioWrapper">
+                                                <input type="radio" class="form-control" id="gender" name="dataCaptureMode" value="Manual" />
+                                                <span class="genderVal">Manual<br /><small class="extraSmallFonts">For a Day</small></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="dateOrMonthSelection">Data Capture For Month / Day of</label>
+                                        <input type="text" class="form-control" id="dateOrMonthSelection">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-default dataCaptureNextBtn">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /. Performance Data Capture Selection Mode -->
+
+                        <!-- Data Capture of Type Bulk -->
+                        <div class="col-md-6">
+                            <div class="mastHeaderOuter clearfix">
+                                <div class="mastHeader">
+                                    <h3>
+                                        <span class="accentColorInline">Generate</span> Template
+                                    </h3>
+                                    <small>Check or uncheck the classes and sections you need.</small>
+                                </div>
+                            </div>
+
+                            <div class="generateTemplateFilterFields customScrollBar">
+                                <small>Select the classes and sections for which you want to generate the template.</small>
+                                <ul class="filterParamSelectionList">
+                                    <li>
+                                        <input type="checkbox" />
+                                        <span class="accentColor">Class I</span>
+                                        <ul class="filterParamList classFilterSelectionList">
+                                            <li><input type="checkbox" />Section A</li>
+                                            <li><input type="checkbox" />Section B</li>
+                                            <li><input type="checkbox" />Section C</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" />
+                                        <span class="accentColor">Class II</span>
+                                        <ul class="filterParamList classFilterSelectionList">
+                                            <li><input type="checkbox" />Section A</li>
+                                            <li><input type="checkbox" />Section B</li>
+                                            <li><input type="checkbox" />Section C</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" />
+                                        <span class="accentColor">Class II</span>
+                                        <ul class="filterParamList classFilterSelectionList">
+                                            <li><input type="checkbox" />Section A</li>
+                                            <li><input type="checkbox" />Section B</li>
+                                            <li><input type="checkbox" />Section C</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" />
+                                        <span class="accentColor">Class III</span>
+                                        <ul class="filterParamList classFilterSelectionList">
+                                            <li><input type="checkbox" />Section A</li>
+                                            <li><input type="checkbox" />Section B</li>
+                                            <li><input type="checkbox" />Section C</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" />
+                                        <span class="accentColor">Class IV</span>
+                                        <ul class="filterParamList classFilterSelectionList">
+                                            <li><input type="checkbox" />Section A</li>
+                                            <li><input type="checkbox" />Section B</li>
+                                            <li><input type="checkbox" />Section C</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" />
+                                        <span class="accentColor">Class V</span>
+                                        <ul class="filterParamList classFilterSelectionList">
+                                            <li><input type="checkbox" />Section A</li>
+                                            <li><input type="checkbox" />Section B</li>
+                                            <li><input type="checkbox" />Section C</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" />
+                                        <span class="accentColor">Class VI</span>
+                                        <ul class="filterParamList classFilterSelectionList">
+                                            <li><input type="checkbox" />Section A</li>
+                                            <li><input type="checkbox" />Section B</li>
+                                            <li><input type="checkbox" />Section C</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" />
+                                        <span class="accentColor">Class VII</span>
+                                        <ul class="filterParamList classFilterSelectionList">
+                                            <li><input type="checkbox" />Section A</li>
+                                            <li><input type="checkbox" />Section B</li>
+                                            <li><input type="checkbox" />Section C</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" />
+                                        <span class="accentColor">Class VIII</span>
+                                        <ul class="filterParamList classFilterSelectionList">
+                                            <li><input type="checkbox" />Section A</li>
+                                            <li><input type="checkbox" />Section B</li>
+                                            <li><input type="checkbox" />Section C</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" />
+                                        <span class="accentColor">Class IX</span>
+                                        <ul class="filterParamList classFilterSelectionList">
+                                            <li><input type="checkbox" />Section A</li>
+                                            <li><input type="checkbox" />Section B</li>
+                                            <li><input type="checkbox" />Section C</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" />
+                                        <span class="accentColor">Class X</span>
+                                        <ul class="filterParamList classFilterSelectionList">
+                                            <li><input type="checkbox" />Section A</li>
+                                            <li><input type="checkbox" />Section B</li>
+                                            <li><input type="checkbox" />Section C</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" />
+                                        <span class="accentColor">Class XI</span>
+                                        <ul class="filterParamList classFilterSelectionList">
+                                            <li><input type="checkbox" />Section A</li>
+                                            <li><input type="checkbox" />Section B</li>
+                                            <li><input type="checkbox" />Section C</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" />
+                                        <span class="accentColor">Class XII</span>
+                                        <ul class="filterParamList classFilterSelectionList">
+                                            <li><input type="checkbox" />Section A</li>
+                                            <li><input type="checkbox" />Section B</li>
+                                            <li><input type="checkbox" />Section C</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="generateTemplateOuter">
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-download-alt"></span>Generate Template</button>
+                                <br />
+                                <small>Generate template for <span class="accentColor">Attendance of Jan 2019</span></small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mastHeaderOuter">
+                                <div class="mastHeader">
+                                    <h3>
+                                        Upload Attendance Data for <span class="accentColorInline">Jan 2019</span>
+                                    </h3>
+                                    <small>Upload the filled in bulk upload template with performance data.</small>
+                                </div>
+                            </div>
+
+                            <form>
+                                <div class="form-group">
+                                    <label for="studentTemplateFile">Upload Template:</label>
+                                    <input type="file" class="form-control" id="studentTemplateFile" placeholder="Upload Template">
+                                </div>
+                                <div class="form-group text-right">
+                                    <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-cloud-upload"></span>&nbsp;Upload Template</button>
+                                    <br />
+                                    <small>Upload filled bulk data template for <span class="accentColor">Attendance of Jan 2019</span></small>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.Data Capture of Type Bulk -->
+
+                        <!-- Data Capture of Type Manual -->
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mastHeaderOuter clearfix">
+                                        <div class="mastHeader">
+                                            <h3>
+                                                Mark Attendance for <span class="accentColorInline">Jan 10 2019</span>
+                                            </h3>
+                                            <small>Proceed though the selection and marking steps to start with the manual performance data capture process.</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="selectCriteria">Select Class</label>
+                                        <select class="form-control">
+                                            <option>Class I</option>
+                                            <option>Class II</option>
+                                            <option>Class III</option>
+                                            <option>Class IV</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="selectCriteria">Select Section</label>
+                                        <select class="form-control">
+                                            <option>Section A</option>
+                                            <option>Section B</option>
+                                            <option>Section C</option>
+                                            <option>Section D</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-default dataCaptureNextBtn">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /. Data Capture of Type Manual -->
+
+
+                        <!-- Manual Data Marking -->
+                        <div class="col-md-12">
+                            <div class="studentSearchAndFilter clearfix">
+                                <div class="searchBox">
+                                    <input type="text" class="studentNameSearch" placeholder="Search student name..." />
+                                </div>
+                            </div>
+
+                            <table class="table generalTable schoolContentTbl manualDataCaptureStudentsTable">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 10%"><input type="checkbox" calss="manualDataCaptureSelectAllStudents" />&nbsp;&nbsp;All</th>
+                                            <th style="width: 40%">Name</th>
+                                            <th style="width: 15%">Roll#</th>
+                                            <th style="width: 25%">Class</th>
+                                            <th style="width: 10%">Section</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox" calss="manualDataCaptureSelectParticualrStudent" /></td>
+                                            <td>John Doe</td>
+                                            <td>565667</td>
+                                            <td>V</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" calss="manualDataCaptureSelectParticualrStudent" /></td>
+                                            <td>Johnathon Doe</td>
+                                            <td>881771</td>
+                                            <td>V</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" calss="manualDataCaptureSelectParticualrStudent" /></td>
+                                            <td>Rahul Kumble</td>
+                                            <td>441515</td>
+                                            <td>V</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" calss="manualDataCaptureSelectParticualrStudent" /></td>
+                                            <td>Jeniffer Coolidge</td>
+                                            <td>661771</td>
+                                            <td>V</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" calss="manualDataCaptureSelectParticualrStudent" /></td>
+                                            <td>Akhil Saxena</td>
+                                            <td>661771</td>
+                                            <td>V</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" calss="manualDataCaptureSelectParticualrStudent" /></td>
+                                            <td>Sreyan Chowdhury</td>
+                                            <td>116009</td>
+                                            <td>V</td>
+                                            <td>A</td>
+                                        </tr>
+                                    </tbody>
+                            </table>
+
+                            <div class="themeSection text-center">
+                                <ul class="pagination">
+                                    <li disabled><a href="#">Previous</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li class="active"><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li disabled><a href="#">Next</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="performanceDataMarkingFianlSteps text-center">
+                                <button type="button" class="btn btn-warning">Cancel</button>
+                                <button type="button" class="btn btn-success">Save</button>
+                            </div>
+                        </div>
+                        <!-- /. Manual Data Marking -->
+                    </div>
+
+                </div>
+            </div>
+            <!-- /. Main Content Panel Inner -->
+            <!-- Footer -->
+            <footer>
+                <p class="text-center">&copy; 2019 <a href="https://www.cognizant.com/">Cognizant</a>, all rights reserved</p>
+            </footer>
+            <!-- /. Footer -->
+        </div>
+        <!-- /. Main Content Panel -->
+    </div>
+    <!-- /. Main Wrapper -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/theme.js"></script>
+
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.customScrollBar').mCustomScrollbar({
+                theme: "dark-2"
+            });
+
+            $('.filterBox .glyphicon').on('click', function () {
+                $(this).toggleClass('active');
+                $('.StudentListWrapper').toggleClass('splitActive');
+            });
+        });
+    </script>
+</body>
+</html>
