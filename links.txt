@@ -1,0 +1,13 @@
+https://drive.google.com/open?id=1CRcwgn2lBl_6aYP8s-bIZyKZCSKngOj3 – Jenkins
+
+https://drive.google.com/open?id=1Z4mKnJtzHDc5A_oHbX-le3nkLJqMTAgH – JMeter – Performance testing
+
+https://drive.google.com/open?id=1-0fNQ_ZLQaBRNMve6ZcdTbOsvBoxFcGX – Docker
+
+https://drive.google.com/open?id=1rY6wHqldMBCxCKEi92rI-KqExbQil-vj – Code coverage
+
+https://drive.google.com/open?id=14kf_bn6gZ8r1-Y5EAksDn-EsU_Y1ZdxQ – Spring boot
+
+
+
+https://www.guru99.com/jenkins-github-integration.html - git-jenkins
