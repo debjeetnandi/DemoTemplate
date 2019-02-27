@@ -1,0 +1,105 @@
+canActivate - guard nav into
+canDeactivate - guard nav away
+canActivateChild - guard nav to a child
+
+
+canDeactivate
+=============================================================================================================================================
+>Build the route guard
+>Register the guard with angular dependency injection
+>Tie the guard to a route
+
+filename: create-employee-can-deactivate-guard.service.ts
+
+------ guard class // guard away from createEmployeeComponent ----
+
+@Injectable()
+export class createEmployeeCanDeactivateGuardService implements CanDeactivate<CreateEmployeeComponent>{
+	canDeactivate(component: CreateEmployeeComponent): Observable<boolean> | Promise<boolean> | boolean{
+		//return true if you want to route away
+		//return false if you want to stay
+	}
+}
+
+//Have a public property within CreateEmployeeComponent to decide true or false for route away
+
+
+
+
+------------- Register the guard service in module (app.module)
+
+------------ Tie the guard to a route
+{
+	path: '',
+	component: CreateEmployeeComponent
+	canDeactivate: [createEmployeeCanDeactivateGuardService]
+}
+
+
+canActivate
+=============================================================================================================================================
+check if emp exists -- if not -- redirect to the poage not found component
+
+filename: employee-details-guard.service.ts
+
+@Injectable()
+export class EmployeeDetailsGuardService implements CanActivate{
+  	
+	constructor(
+		private _employeeService: EmployeeService,
+		private _router: Router //import from @angular/router
+	){
+
+	}
+	
+	canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean{
+		const employeeEsists = !!this._employeeService.getEmployee(+route.paramMap.get('id'));
+  	
+		if(employeeExists){
+			return true;
+		}
+		else{
+			this._router.navigate(['notfound']);
+			return false;
+		}
+	}
+}
+
+Resolve
+=============================================================================================================================================
+step 1 - Implement the route resolver service
+
+filename: employee-list-resolver.service.ts
+--
+
+import { Resolve } from '@angular/router';
+import { Observable } from 'rxjs/Observable';
+
+@Injectable()
+export class EmployeeListResolverService implement Resolve<Employee[]>{
+	constructor(private employeeService: EmployeeService){
+	}
+	
+	resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Employee>{
+		return this.employeeService.getEmployees();
+	}
+} 
+
+//import in app.module
+
+//tie the resolver guard with the route
+{
+	path: 'list',
+	component: ListEmployeesComponent,
+	resolve: { employeeList: EmployeeListResolverService }
+}
+
+//Read pre-fetched data from the ActivatedRoute
+export class ListEmployeesComponent{
+	employees: Employee[];
+
+	constructor(private _route: ActivatedRoute){
+	
+		this.employees = this._route.snapshot.data['employeeList']
+	}
+}
