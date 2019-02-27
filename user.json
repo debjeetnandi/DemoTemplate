@@ -1,0 +1,723 @@
+//user
+{
+	"User": {
+		"UserName": "Sreyan Chowdhury",
+		"Email": "sreyan.chowdhury@cognizant.com",
+		"Phone": "1100011001",
+		"UserRoleId": "2"
+	}
+}
+
+//Schools
+{
+	"Schools": [
+		{
+			"SchoolMasterId": "1",
+			"Code": "SCH1",
+			"Name": "Modern High School",
+			"Address1": "24 ABC Demo Road",
+			"Address2": "Marygoround St.",
+			"City": "Kolkata",
+			"State": "West Bengal",
+			"Zip": "700001",
+			"ContactName": "John Doe",
+			"ContactEmail": "johndoe@example.com",
+			"ContactPhone": "1010100000",
+			"Branch": "Ballygunge",
+			"ActiveFlag": "1"
+		},
+		{
+			"SchoolMasterId": "2",
+			"Code": "SCH2",
+			"Name": "Wellbeing and Wellness Climatic Management School",
+			"Address1": "34/B2 Skiyapa Pally",
+			"Address2": "Nagarpura West Coast",
+			"City": "Kolkata",
+			"State": "West Bengal",
+			"Zip": "700101",
+			"ContactName": "Pattrick Gomez",
+			"ContactEmail": "pattrickjoe42@example.com",
+			"ContactPhone": "1111100111",
+			"Branch": "Bhawanipore",
+			"ActiveFlag": "1"
+		},
+		{
+			"SchoolMasterId": "3",
+			"Code": "SCH3",
+			"Name": "B.D Memorial Institute",
+			"Address1": "36 Roland Ross Colony",
+			"Address2": "Pratipura East",
+			"City": "Kolkata",
+			"State": "West Bengal",
+			"Zip": "700101",
+			"ContactName": "Pattrick Gomez",
+			"ContactEmail": "pattrickjoe42@example.com",
+			"ContactPhone": "1111100111",
+			"Branch": "Bhawanipore",
+			"ActiveFlag": "1"
+		}
+	]
+}
+
+//Groups
+{
+	"Groups": [
+		{
+			"GroupTrxId": "1",
+			"Code": "1",
+			"Name": "A",
+			"ActiveFlag": "Chocolate"
+		},
+		{
+			"GroupTrxId": "2",
+			"Code": "2",
+			"Name": "Vanilla",
+			"ActiveFlag": "1"
+		},
+		{
+			"GroupTrxId": "3",
+			"Code": "3",
+			"Name": "Raspberry",
+			"ActiveFlag": "1"
+		},
+		{
+			"GroupTrxId": "4",
+			"Code": "4",
+			"Name": "Rainberry",
+			"ActiveFlag": "1"
+		},
+		{
+			"GroupTrxId": "5",
+			"Code": "5",
+			"Name": "Wildcherries",
+			"ActiveFlag": "1"
+		}
+	]
+}
+
+
+//Students
+{
+	"Students": [
+		{
+			"StudentTrxId": "1",
+			"SchoolMasterId": "1",
+			"GroupTrxId": "1",
+			"RollNo": "1",
+			"Class": "I",
+			"Section": "A",
+			"NameFirst": "Sooraj",
+			"NameMiddle": "Tilaknath",
+			"NameLast": "Pradhan",
+			"BloodGroup": "A+",
+			"FatherName": "Tilaknath Pradhan",
+			"MotherName": "Mahima Pradhan",
+			"DateOfBirth": "1990-04-05 0:36:57.267",
+			"Gender": "Male",
+			"Caste": "",
+			"Address1": "26 BBC Channel",
+			"Address2": "Kumbahar Road",
+			"City": "Kolkata",
+			"State": "West Bengal",
+			"Zip": "700001",
+			"Email": "sooraj01someone@example.com",
+			"PhoneNo": "90000011001",
+			"AltEmail": "someone@example.com",
+			"AdditionalInfo": "Additional Info text block."
+		},
+		{
+			"StudentTrxId": "2",
+			"SchoolMasterId": "1",
+			"GroupTrxId": "2",
+			"RollNo": "1",
+			"Class": "I",
+			"Section": "A",
+			"NameFirst": "Sooraj",
+			"NameMiddle": "Tilaknath",
+			"NameLast": "Pradhan",
+			"BloodGroup": "A+",
+			"FatherName": "Tilaknath Pradhan",
+			"MotherName": "Mahima Pradhan",
+			"DateOfBirth": "1990-04-05 0:36:57.267",
+			"Gender": "Male",
+			"Caste": "",
+			"Address1": "26 BBC Channel",
+			"Address2": "Kumbahar Road",
+			"City": "Kolkata",
+			"State": "West Bengal",
+			"Zip": "700001",
+			"Email": "sooraj01someone@example.com",
+			"PhoneNo": "90000011001",
+			"AltEmail": "someone@example.com",
+			"AdditionalInfo": "Additional Info text block."
+		},
+		{
+			"StudentTrxId": "3",
+			"SchoolMasterId": "2",
+			"GroupTrxId": "2",
+			"RollNo": "1",
+			"Class": "I",
+			"Section": "A",
+			"NameFirst": "Debraj",
+			"NameMiddle": "",
+			"NameLast": "Pradhan",
+			"BloodGroup": "A+",
+			"FatherName": "Tilaknath Pradhan",
+			"MotherName": "Mahima Pradhan",
+			"DateOfBirth": "1990-04-05 0:36:57.267",
+			"Gender": "Male",
+			"Caste": "",
+			"Address1": "26 BBC Channel",
+			"Address2": "Kumbahar Road",
+			"City": "Kolkata",
+			"State": "West Bengal",
+			"Zip": "700001",
+			"Email": "sooraj01someone@example.com",
+			"PhoneNo": "90000011001",
+			"AltEmail": "someone@example.com",
+			"AdditionalInfo": "Additional Info text block."
+		},
+		{
+			"StudentTrxId": "4",
+			"SchoolMasterId": "3",
+			"GroupTrxId": "A",
+			"RollNo": "1",
+			"Class": "I",
+			"Section": "A",
+			"NameFirst": "Ronita",
+			"NameMiddle": "",
+			"NameLast": "Pradhan",
+			"BloodGroup": "A+",
+			"FatherName": "Tilaknath Pradhan",
+			"MotherName": "Mahima Pradhan",
+			"DateOfBirth": "1990-04-05 0:36:57.267",
+			"Gender": "Female",
+			"Caste": "",
+			"Address1": "26 BBC Channel",
+			"Address2": "Kumbahar Road",
+			"City": "Kolkata",
+			"State": "West Bengal",
+			"Zip": "700001",
+			"Email": "sooraj01someone@example.com",
+			"PhoneNo": "90000011001",
+			"AltEmail": "someone@example.com",
+			"AdditionalInfo": "Additional Info text block."
+		},
+		{
+			"StudentTrxId": "5",
+			"SchoolMasterId": "3",
+			"GroupTrxId": "3",
+			"RollNo": "1",
+			"Class": "I",
+			"Section": "B",
+			"NameFirst": "Smita",
+			"NameMiddle": "",
+			"NameLast": "Roy",
+			"BloodGroup": "A+",
+			"FatherName": "Tilaknath Roy",
+			"MotherName": "Mahima Pradhan",
+			"DateOfBirth": "1990-04-05 0:36:57.267",
+			"Gender": "Female",
+			"Caste": "",
+			"Address1": "26 BBC Channel",
+			"Address2": "Kumbahar Road",
+			"City": "Kolkata",
+			"State": "West Bengal",
+			"Zip": "700001",
+			"Email": "sooraj01someone@example.com",
+			"PhoneNo": "90000011001",
+			"AltEmail": "someone@example.com",
+			"AdditionalInfo": "Additional Info text block."
+		},
+		{
+			"StudentTrxId": "6",
+			"SchoolMasterId": "3",
+			"GroupTrxId": "4",
+			"RollNo": "1",
+			"Class": "I",
+			"Section": "B",
+			"NameFirst": "Saswati",
+			"NameMiddle": "",
+			"NameLast": "Mukherjee",
+			"BloodGroup": "A+",
+			"FatherName": "Tilaknath Mukherjee",
+			"MotherName": "Mahima Mukherjee",
+			"DateOfBirth": "1990-04-05 0:36:57.267",
+			"Gender": "Female",
+			"Caste": "",
+			"Address1": "26 BBC Channel",
+			"Address2": "Kumbahar Road",
+			"City": "Kolkata",
+			"State": "West Bengal",
+			"Zip": "700001",
+			"Email": "sooraj01someone@example.com",
+			"PhoneNo": "90000011001",
+			"AltEmail": "someone@example.com",
+			"AdditionalInfo": "Additional Info text block."
+		},
+		{
+			"StudentTrxId": "7",
+			"SchoolMasterId": "3",
+			"GroupTrxId": "4",
+			"RollNo": "1",
+			"Class": "I",
+			"Section": "C",
+			"NameFirst": "Sreelekha",
+			"NameMiddle": "",
+			"NameLast": "Chatterjee",
+			"BloodGroup": "A+",
+			"FatherName": "Tilaknath Chatterjee",
+			"MotherName": "Mahima Chatterjee",
+			"DateOfBirth": "1990-04-05 0:36:57.267",
+			"Gender": "Female",
+			"Caste": "",
+			"Address1": "26 BBC Channel",
+			"Address2": "Kumbahar Road",
+			"City": "Kolkata",
+			"State": "West Bengal",
+			"Zip": "700001",
+			"Email": "sooraj01someone@example.com",
+			"PhoneNo": "90000011001",
+			"AltEmail": "someone@example.com",
+			"AdditionalInfo": "Additional Info text block."
+		},
+		{
+			"StudentTrxId": "8",
+			"SchoolMasterId": "3",
+			"GroupTrxId": "4",
+			"RollNo": "1",
+			"Class": "I",
+			"Section": "A",
+			"NameFirst": "Jeet",
+			"NameMiddle": "",
+			"NameLast": "Nandi",
+			"BloodGroup": "A+",
+			"FatherName": "Bhakti Nandi",
+			"MotherName": "Swapna Nandi",
+			"DateOfBirth": "1990-04-05 0:36:57.267",
+			"Gender": "Male",
+			"Caste": "",
+			"Address1": "26 BBC Channel",
+			"Address2": "Kumbahar Road",
+			"City": "Kolkata",
+			"State": "West Bengal",
+			"Zip": "700001",
+			"Email": "sooraj01someone@example.com",
+			"PhoneNo": "90000011001",
+			"AltEmail": "someone@example.com",
+			"AdditionalInfo": "Additional Info text block."
+		},
+		{
+			"StudentTrxId": "9",
+			"SchoolMasterId": "3",
+			"GroupTrxId": "5",
+			"RollNo": "1",
+			"Class": "I",
+			"Section": "B",
+			"NameFirst": "Kumar",
+			"NameMiddle": "",
+			"NameLast": "Saha",
+			"BloodGroup": "A+",
+			"FatherName": "Ronit Saha",
+			"MotherName": "Rita Saha",
+			"DateOfBirth": "1990-04-05 0:36:57.267",
+			"Gender": "Male",
+			"Caste": "",
+			"Address1": "26 BBC Channel",
+			"Address2": "Kumbahar Road",
+			"City": "Kolkata",
+			"State": "West Bengal",
+			"Zip": "700001",
+			"Email": "sooraj01someone@example.com",
+			"PhoneNo": "90000011001",
+			"AltEmail": "someone@example.com",
+			"AdditionalInfo": "Additional Info text block."
+		}
+	]
+}
+
+
+//Metrics
+{
+	"Metrics": [
+		{
+			"MetricCategoryMasterId": "1",
+			"Code" "1",
+			"Name" "Attendance",
+			"ActiveFlag": "1",
+		},
+		{
+			"MetricCategoryMasterId": "2",
+			"Code" "2",
+			"Name" "Discipline",
+			"ActiveFlag": "1",
+		},
+		{
+			"MetricCategoryMasterId": "3",
+			"Code" "3",
+			"Name" "Academics",
+			"ActiveFlag": "1",
+		},
+		{
+			"MetricCategoryMasterId": "4",
+			"Code" "4",
+			"Name" "Fitness",
+			"ActiveFlag": "1",
+		}
+	]
+}
+
+//SchoolMetricMapping
+{
+	"SchoolMetricMapping": [
+		{
+			"SchoolMetricMappingTrxId": "1",
+			"MetricCatgegoryMasterId": "1",
+			"SchoolMasterId": "1",
+			"ActiveFlag":  "1"
+		},
+		{
+			"SchoolMetricMappingTrxId": "2",
+			"MetricCatgegoryMasterId": "2",
+			"SchoolMasterId": "1",
+			"ActiveFlag":  "1"
+		},
+		{
+			"SchoolMetricMappingTrxId": "3",
+			"MetricCatgegoryMasterId": "3",
+			"SchoolMasterId": "1",
+			"ActiveFlag":  "1"
+		},
+		{
+			"SchoolMetricMappingTrxId": "4",
+			"MetricCatgegoryMasterId": "4",
+			"SchoolMasterId": "1",
+			"ActiveFlag":  "1"
+		},
+		{
+			"SchoolMetricMappingTrxId": "5",
+			"MetricCatgegoryMasterId": "1",
+			"SchoolMasterId": "2",
+			"ActiveFlag":  "1"
+		},
+		{
+			"SchoolMetricMappingTrxId": "6",
+			"MetricCatgegoryMasterId": "2",
+			"SchoolMasterId": "2",
+			"ActiveFlag":  "1"
+		},
+		{
+			"SchoolMetricMappingTrxId": "7",
+			"MetricCatgegoryMasterId": "3",
+			"SchoolMasterId": "2",
+			"ActiveFlag":  "1"
+		},
+		{
+			"SchoolMetricMappingTrxId": "8",
+			"MetricCatgegoryMasterId": "4",
+			"SchoolMasterId": "2",
+			"ActiveFlag":  "1"
+		},
+		{
+			"SchoolMetricMappingTrxId": "9",
+			"MetricCatgegoryMasterId": "1",
+			"SchoolMasterId": "3",
+			"ActiveFlag":  "1"
+		},
+		{
+			"SchoolMetricMappingTrxId": "10",
+			"MetricCatgegoryMasterId": "2",
+			"SchoolMasterId": "3",
+			"ActiveFlag":  "1"
+		},
+		{
+			"SchoolMetricMappingTrxId": "11",
+			"MetricCatgegoryMasterId": "3",
+			"SchoolMasterId": "3",
+			"ActiveFlag":  "1"
+		},
+		{
+			"SchoolMetricMappingTrxId": "12",
+			"MetricCatgegoryMasterId": "4",
+			"SchoolMasterId": "3",
+			"ActiveFlag":  "1"
+		}
+	]
+}
+
+//Performance Data
+{
+	"PerformanceData": [
+		{
+			"StudentMetricTrxId": "1",
+			"MetricCategoryMasterId": "1",
+			"StudentTrxId": "1",
+			"sValue": "1",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "2",
+			"MetricCategoryMasterId": "1",
+			"StudentTrxId": "1",
+			"sValue": "1",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "3",
+			"MetricCategoryMasterId": "2",
+			"StudentTrxId": "1",
+			"sValue": "1",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "4",
+			"MetricCategoryMasterId": "2",
+			"StudentTrxId": "1",
+			"sValue": "0",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "5",
+			"MetricCategoryMasterId": "3",
+			"StudentTrxId": "1",
+			"sValue": "1",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "6",
+			"MetricCategoryMasterId": "3",
+			"StudentTrxId": "1",
+			"sValue": "1",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "7",
+			"MetricCategoryMasterId": "4",
+			"StudentTrxId": "1",
+			"sValue": "0",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "8",
+			"MetricCategoryMasterId": "4",
+			"StudentTrxId": "1",
+			"sValue": "0",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		},
+		
+		
+		
+		
+		
+		{
+			"StudentMetricTrxId": "9",
+			"MetricCategoryMasterId": "1",
+			"StudentTrxId": "2",
+			"sValue": "1",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "10",
+			"MetricCategoryMasterId": "1",
+			"StudentTrxId": "2",
+			"sValue": "0",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "11",
+			"MetricCategoryMasterId": "2",
+			"StudentTrxId": "2",
+			"sValue": "1",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "12",
+			"MetricCategoryMasterId": "2",
+			"StudentTrxId": "2",
+			"sValue": "1",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "13",
+			"MetricCategoryMasterId": "3",
+			"StudentTrxId": "2",
+			"sValue": "1",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "14",
+			"MetricCategoryMasterId": "3",
+			"StudentTrxId": "2",
+			"sValue": "1",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "15",
+			"MetricCategoryMasterId": "4",
+			"StudentTrxId": "2",
+			"sValue": "1",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "16",
+			"MetricCategoryMasterId": "4",
+			"StudentTrxId": "2",
+			"sValue": "1",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		},
+		
+		
+		
+		
+		
+		
+		{
+			"StudentMetricTrxId": "17",
+			"MetricCategoryMasterId": "1",
+			"StudentTrxId": "3",
+			"sValue": "1",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "18",
+			"MetricCategoryMasterId": "1",
+			"StudentTrxId": "3",
+			"sValue": "0",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "19",
+			"MetricCategoryMasterId": "2",
+			"StudentTrxId": "3",
+			"sValue": "0",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "20",
+			"MetricCategoryMasterId": "2",
+			"StudentTrxId": "3",
+			"sValue": "0",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "21",
+			"MetricCategoryMasterId": "3",
+			"StudentTrxId": "3",
+			"sValue": "1",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "22",
+			"MetricCategoryMasterId": "3",
+			"StudentTrxId": "3",
+			"sValue": "1",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "23",
+			"MetricCategoryMasterId": "4",
+			"StudentTrxId": "3",
+			"sValue": "1",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "24",
+			"MetricCategoryMasterId": "4",
+			"StudentTrxId": "3",
+			"sValue": "1",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		},
+		
+		
+		
+		
+		
+		{
+			"StudentMetricTrxId": "25",
+			"MetricCategoryMasterId": "1",
+			"StudentTrxId": "4",
+			"sValue": "1",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "26",
+			"MetricCategoryMasterId": "1",
+			"StudentTrxId": "4",
+			"sValue": "0",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "27",
+			"MetricCategoryMasterId": "2",
+			"StudentTrxId": "4",
+			"sValue": "1",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "28",
+			"MetricCategoryMasterId": "2",
+			"StudentTrxId": "4",
+			"sValue": "1",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "29",
+			"MetricCategoryMasterId": "3",
+			"StudentTrxId": "4",
+			"sValue": "0",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "30",
+			"MetricCategoryMasterId": "3",
+			"StudentTrxId": "4",
+			"sValue": "0",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "31",
+			"MetricCategoryMasterId": "4",
+			"StudentTrxId": "4",
+			"sValue": "1",
+			"LoggedDate": "2019-02-26 0:36:57.267"
+		},
+		{
+			"StudentMetricTrxId": "32",
+			"MetricCategoryMasterId": "4",
+			"StudentTrxId": "4",
+			"sValue": "1",
+			"LoggedDate": "2019-02-27 0:36:57.267"
+		}
+		
+	]
+}
+
+//Holidays
+{
+	"Holidays": [
+		{
+			"SchoolHolidayMappingId": "1",
+			"SchoolMasterId": "1",
+			"HolidayDt": "2019-02-04 0:36:57.267",
+			"ActiveFlag": "1"
+		},
+		{
+			"SchoolHolidayMappingId": "2",
+			"SchoolMasterId": "2",
+			"HolidayDt": "2019-02-04 0:36:57.267",
+			"ActiveFlag": "1"
+		},
+		{
+			"SchoolHolidayMappingId": "3",
+			"SchoolMasterId": "3",
+			"HolidayDt": "2019-02-04 0:36:57.267",
+			"ActiveFlag": "1"
+		}
+	]
+}
+
+
+
+
+
+
